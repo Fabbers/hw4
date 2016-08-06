@@ -1,9 +1,7 @@
 * {
-    height: 164px;
+    padding 0;
     margin: 0;
-    
-    
-        }
+}
 
 .clearfix::after {
     display: block;
@@ -23,19 +21,13 @@ ul {
 }
 
 .wrapper {
-    
-    
     width: 1000px;
     margin: 0 auto;
     padding-top: 11px;
     background: #fff;
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .6);
     box-shadow: 0 0 15px rgba(0, 0, 0, .6);
-
-    
 }
-
-
 
 .contacts {
     padding-right: 30px;
@@ -43,7 +35,7 @@ ul {
     font-size: 12px;
     font-family: Tahoma;
     line-height: 15px;
-    color: #5fa5bb
+    color: #5fa5bb;
 }
 
 .contacts:first-child {
@@ -56,17 +48,12 @@ ul {
     color: #128aa7;
 }
 
-.contacts h3 {
-    display: block;
-    color: #128aa7;
-}
 .contacts a {
     text-decoration: none;
 }
 
-
 .logo {
-    display: block
+    display: block;
     padding-left: 49px;
     padding-bottom: 0;
     width: 283px;
