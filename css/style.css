@@ -1,6 +1,10 @@
 * {
     padding 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
 }
 
 .clearfix::after {
@@ -9,22 +13,22 @@
     content: '';
 }
 
-
 body {
     background-image: url(images/background.png);
     background-repeat: repeat-x;
-    font-family: Tahoma;
-
+    font-family: Tahoma;    
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
+
+    
 }
 
 .wrapper {
     width: 1000px;
+    padding-top: 46px;
     margin: 0 auto;
-    padding-top: 11px;
     background: #fff;
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .6);
     box-shadow: 0 0 15px rgba(0, 0, 0, .6);
@@ -99,25 +103,31 @@ ul {
     height: 30px;
     border-top: 1px solid #cacbcb;
     border-bottom: 1px solid #000;
-    background: url('../images/nav.png');
-    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .4);
+    background: rgba(55,55,55,1);
+background: -webkit-linear-gradient(rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
+background: -o-linear-gradient(rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
+background: linear-gradient(rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#303030', GradientType=0 );
     box-shadow: 0 3px 5px rgba(0, 0, 0, .4);
     z-index: 2;
-}
+    width: 100%;
+    text-align: center;
+}                
 
-.nav li {
-    display: block;
+li {
+    
     float: left;
-    line-height: 29px;
+    line-height: 20px;
+    text-align: center;
 }
 
 .nav li:nth-child(1) {
-    padding: 0 57px 0 69px;
+    
 }
 
 .nav li:nth-child(2) {
     position: relative;
-    padding: 0 46px 0 10px;
+    
 }
 
 .nav li:nth-child(2):hover > .sub-nav {
@@ -125,23 +135,23 @@ ul {
 }
 
 .nav li:nth-child(3) {
-    padding: 0 58px 0 10px;
+    
 }
 
 .nav li:nth-child(4) {
-    padding: 0 47px 0 10px;
+    
 }
 
 .nav li:nth-child(5) {
-    padding: 0 63px 0 10px;
+    
 }
 
 .nav li:nth-child(6) {
-    padding: 0 52px 0 10px;
+    
 }
 
 .nav li:nth-child(7) {
-    padding: 0 50px 0 10px;
+    
 }
 
 .nav li a {
@@ -176,12 +186,15 @@ ul {
 .info {
     width: 210px;
     
-    float: left;
+    
     border-right: 1px solid #c7cacf;
     background: #edeef0;
     overflow: hidden;
     height: 542px;
-    display: inline-block;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
     
 }
 
@@ -194,6 +207,9 @@ ul {
     background: #edeef0;
     height: 542px;
     display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .main {
@@ -203,35 +219,72 @@ ul {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.main {
-    height: 542px;
-    display: inline-block;
-    
-}
-
-.main {
-    
-}
-
 .center {
     color: #424c43;
     font-size: 14px;
     overflow: hidden;
+    position: relative;
+}
 
+.center h2 {
+    padding: 10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.center p {
+    padding: 0 0 5px 10px;
+    color: #424c43;
+    font-size: 14px;
+}
+
+footer {
+    padding: 10px 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+li .active {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1px 16px;
+    text-decoration: none;
+    padding: 0 30px;
+}
+
+.menu {
+    
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    display: block;
+    
+}
+    
+
+li .active:hover, .dropdown:hover .dropbtn { 
+    background-color: aquamarine;
+    
+}
+
+.menu li {
+    line-height: 28px;
+    display: inline;
 }
