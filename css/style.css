@@ -13,7 +13,7 @@
 }
 
 body {
-    background-image: url(images/background.png);
+    background-image: url('../images/background.png');
     background-repeat: repeat-x;
     font-family: Tahoma;    
 }
@@ -99,13 +99,6 @@ body {
    position: absolute;
     top: 0;
     left: 0;    
-}
-
-footer {
-    padding: 10px 0;
-    color: #fff;
-    font-size: 12px;
-    text-align: center;
 }
 
 .nav {
@@ -217,5 +210,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', end
     color: #424c43;
     font-size: 14px;
 }
-        
+
+footer {
+    padding: 10px 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}      
 
