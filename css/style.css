@@ -132,16 +132,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', end
 }
 
 .menu li a, .dropbtn {
-    display: inline-block;
+    display: block;
     color: white;
-    text-align: center;
+    text-align: left;
+    padding-left: 4px;
     
 /*    padding: 14px 16px;*/
     text-decoration: none;
 }
 
 .menu li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #303030;
 }
 
 .menu li.dropdown {
