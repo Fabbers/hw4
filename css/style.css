@@ -71,14 +71,15 @@ body {
     margin: 0 auto;
 }
 
-.countries a {
+.countries li a {
     font-size: 10px;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .country {
     display: inline-block;
     margin-left: 15px;
+    text-decoration: none;
 }
 
 .photo {
@@ -143,6 +144,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', end
 
 .menu li a:hover, .dropdown:hover .dropbtn {
     background-color: #303030;
+    line-height: 29px;
 }
 
 .menu li.dropdown {
@@ -219,3 +221,12 @@ footer {
     text-align: center;
 }      
 
+
+.country span {
+    color: #128aa7;
+    
+}
+
+.countries li a:hover{
+    text-decoration: underline;
+}
